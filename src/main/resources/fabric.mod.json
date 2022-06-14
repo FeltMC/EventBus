@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "forgefelt-eventbus",
+  "version": "${version}",
+  "name": "ForgeFelt EventBus",
+  "description": "FML compat for Fabric Loader",
+  "authors": [
+    "FeltMC"
+  ],
+  "contributors": [
+    "Trinsdar",
+    "PseudoDistant"
+  ],
+  "contact": {
+    "homepage": "feltmc.github.io",
+    "sources": "https://github.com/FeltMC/ForgeFelt"
+  },
+
+  "licenses": "LGPL-2.1",
+  "icon": "assets/forgefelt/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": ">=1.18",
+    "java": ">=17"
+  },
+  "suggests": {
+    "fabricated-forge-api": "*"
+  }
+}
