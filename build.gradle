@@ -42,6 +42,8 @@ loom {
 }
 
 dependencies {
+	implementation 'org.jetbrains:annotations:20.1.0'
+
 	// To change the versions see the gradle.properties file
 	if (rootProject == project){
 		minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -52,6 +54,10 @@ dependencies {
 		modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	}
 
+	compileOnly('cpw.mods:modlauncher:10.0.+')
+	testCompileOnly('cpw.mods:modlauncher:10.0.+')
+	testCompileOnly('cpw.mods:securejarhandler:1.0.+')
+	testCompileOnly('org.junit.jupiter:junit-jupiter-engine:5.8.+')
 	shade implementation("net.jodah:typetools:0.8.3")
 	shade implementation("org.apache.maven:maven-artifact:${APACHE_MAVEN_ARTIFACT_VERSION}")
 	shade implementation("com.moandjiezana.toml:toml4j:0.7.2")
