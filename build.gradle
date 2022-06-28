@@ -7,6 +7,7 @@ plugins {
 
 if (rootProject == project){
 	apply plugin: "fabric-loom";
+	apply plugin: "maven-publish"
 }
 
 sourceCompatibility = JavaVersion.VERSION_17
