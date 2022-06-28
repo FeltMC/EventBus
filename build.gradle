@@ -2,6 +2,7 @@ plugins {
 	id 'fabric-loom' version '0.12-SNAPSHOT' apply false
 	id 'maven-publish'
 	id 'com.github.johnrengelman.shadow' version '7.1.0'
+	id "maven-publish"
 }
 
 if (rootProject == project){
